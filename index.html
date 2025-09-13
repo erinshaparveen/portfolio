@@ -9,7 +9,7 @@
 <body class="bg-gray-50 text-gray-800">
 
   <!-- Header -->
-<header class="bg-indigo-900 text-white py-10">
+<header id = 'contact' class="bg-indigo-900 text-white py-10">
   <div class="max-w-5xl mx-auto flex flex-col items-center text-center px-4">
     <img src="ProfilePic.jpeg" alt="Insha Parveen" 
          class="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover mb-4" />
@@ -18,13 +18,13 @@
     <div class="mt-3 space-y-1 text-sm sm:text-base">
       <p>📍 Bijnor, Uttar Pradesh</p>
       <p>📞 +91-6398050375</p>
-      <p>✉️ <a href="mailto:er.inshaparveen@gmail.com" class="underline hover:text-yellow-300">er.inshaparveen@gmail.com</a></p>
+       <p>✉️ <a href="mailto:er.inshaparveen@gmail.com" class="underline hover:text-yellow-300">er.inshaparveen@gmail.com</a></p>
     </div>
   </div>
 </header>
 
   <!-- About -->
-  <section class="max-w-5xl mx-auto my-10 px-4">
+  <section id="about" class="max-w-5xl mx-auto my-10 px-4">
     <div class="bg-white rounded-2xl shadow-lg p-6">
       <h2 class="text-2xl font-semibold text-indigo-900 border-b pb-2 mb-4">About Me</h2>
       <p>
@@ -34,7 +34,7 @@
   </section>
 
   <!-- Skills -->
-  <section class="max-w-5xl mx-auto my-10 px-4">
+  <section id = 'skills' class="max-w-5xl mx-auto my-10 px-4">
     <div class="bg-white rounded-2xl shadow-lg p-6">
       <h2 class="text-2xl font-semibold text-indigo-900 border-b pb-2 mb-4">Skills</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -73,6 +73,7 @@
           <ul class="list-disc list-inside text-sm">
             <li>Agile/Scrum</li><li>REST API Testing</li><li>Mobile Automation</li>
             <li>Cross-Browser Testing</li><li>Performance Testing</li><li>Test Case Design</li>
+		<li>Functional Testing</li>
           </ul>
         </div>
       </div>
@@ -110,74 +111,191 @@
     </div>
   </section>
 
-  <!-- Projects -->
-<section class="max-w-5xl mx-auto my-10 px-4">
+<!-- Projects -->
+<section id = 'projects' class="max-w-5xl mx-auto my-10 px-4">
   <div class="bg-white rounded-2xl shadow-lg p-6">
-    <h2 class="text-2xl font-semibold text-indigo-900 border-b pb-2 mb-4">Projects</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <h2 class="text-2xl font-semibold text-indigo-900 border-b pb-2 mb-6">Projects</h2>
+    <div class="space-y-6">
 
       <!-- GovIntranet -->
-      <div class="p-4 border rounded-xl shadow-sm hover:shadow-md">
-        <h3 class="font-bold text-indigo-700">GovIntranet</h3>
-        <p class="text-sm mb-2">Government intranet platform with SSO, AI-powered meetings, dashboards, and RBAC security.</p>
-        <p class="text-sm font-semibold text-gray-700">Skills Used:</p>
-        <ul class="list-disc list-inside text-sm text-gray-600 mb-2">
-          <li>Automation: Selenium with Java</li>
-          <li>Mobile Application: Appium with Java</li>
-          <li>CI/CD: Jenkins</li>
-          <li>Cloud: AWS</li>
-          <li>API Testing: REST Assured</li>
-        </ul>
-        <a href="https://govintranet.gov.in/#/web/home" target="_blank" class="text-indigo-600 text-sm font-medium">View Project →</a>
+      <div class="bg-white border rounded-2xl shadow-lg p-6 hover:shadow-xl transition transform hover:scale-105">
+        <h3 class="text-xl font-bold text-indigo-700 mb-2">GovIntranet</h3>
+        <p class="text-sm text-gray-600 mb-4">
+          Government intranet platform with SSO, AI-powered meetings, dashboards, and RBAC security.
+        </p>
+
+        <!-- Role -->
+        <div class="mb-3">
+          <span class="inline-block bg-indigo-100 text-indigo-800 text-xs font-semibold px-3 py-1 rounded-full">
+            Role: Automation Tester
+          </span>
+        </div>
+
+        <!-- Skills -->
+        <div class="mb-4">
+          <h4 class="text-sm font-semibold text-gray-700 mb-1">Skills Used:</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Selenium (Java)</span>
+            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Appium</span>
+            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">REST Assured</span>
+            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Jenkins</span>
+            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">AWS</span>
+          </div>
+        </div>
+
+        <!-- Achievements -->
+        <div class="bg-indigo-50 border-l-4 border-indigo-500 p-3 rounded mb-4">
+          <h4 class="text-sm font-semibold text-indigo-800 mb-1">Key Achievements:</h4>
+          <ul class="list-disc list-inside text-xs text-gray-700 space-y-1">
+            <li>Reduced regression testing time by <strong>40%</strong>.</li>
+            <li>Increased test coverage from <strong>60% → 90%</strong>.</li>
+            <li>Improved pipeline speed by <strong>25%</strong>.</li>
+          </ul>
+        </div>
+
+        <!-- Footer Info -->
+        <div class="flex justify-between items-center text-sm text-gray-600">
+          <p><strong>👥 Team Size:</strong> 15</p>
+          <a href="https://govintranet.gov.in/#/web/home" target="_blank" 
+             class="text-indigo-600 font-medium hover:underline">View Project →</a>
+        </div>
       </div>
 
       <!-- Norton Security -->
-      <div class="p-4 border rounded-xl shadow-sm hover:shadow-md">
-        <h3 class="font-bold text-indigo-700">Norton Security</h3>
-        <p class="text-sm mb-2">Consumer-facing cybersecurity site offering antivirus, malware protection, VPN & device security.</p>
-        <p class="text-sm font-semibold text-gray-700">Skills Used:</p>
-        <ul class="list-disc list-inside text-sm text-gray-600 mb-2">
-          <li>API Testing: Postman</li>
-          <li>Programming: Java</li>
-          <li>Automation Frameworks: TestNG & Maven</li>
-          <li>Version Control: Git</li>
-          <li>CI/CD: Jenkins</li>
-        </ul>
-        <a href="https://in.norton.com/" target="_blank" class="text-indigo-600 text-sm font-medium">View Project →</a>
+       <div class="bg-white border rounded-2xl shadow-lg p-6 hover:shadow-xl transition transform hover:scale-105">
+        <h3 class="text-xl font-bold text-indigo-700 mb-2">Norton Security</h3>
+        <p class="text-sm text-gray-600 mb-4">
+          Consumer-facing cybersecurity site offering antivirus, malware protection, VPN & device security.
+        </p>
+
+        <!-- Role -->
+        <div class="mb-3">
+          <span class="inline-block bg-indigo-100 text-indigo-800 text-xs font-semibold px-3 py-1 rounded-full">
+            Role: API Test Owner
+          </span>
+        </div>
+
+        <!-- Skills -->
+        <div class="mb-4">
+          <h4 class="text-sm font-semibold text-gray-700 mb-1">Skills Used:</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Postman</span>
+            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Java</span>
+            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">TestNG</span>
+            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Maven</span>
+            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Git</span>
+            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Jenkins</span>
+          </div>
+        </div>
+
+        <!-- Achievements -->
+        <div class="bg-indigo-50 border-l-4 border-indigo-500 p-3 rounded mb-4">
+          <h4 class="text-sm font-semibold text-indigo-800 mb-1">Key Achievements:</h4>
+          <ul class="list-disc list-inside text-xs text-gray-700 space-y-1">
+            <li>Automated 100+ API service validations improving reliability.</li>
+            <li>Reduced manual testing effort by <strong>60%</strong>.</li>
+            <li>Cut release delays by <strong>20%</strong> via early defect detection.</li>
+          </ul>
+        </div>
+
+        <!-- Footer Info -->
+        <div class="flex justify-between items-center text-sm text-gray-600">
+          <p><strong>👥 Team Size:</strong> 5</p>
+          <a href="https://in.norton.com/" target="_blank" 
+             class="text-indigo-600 font-medium hover:underline">View Project →</a>
+        </div>
       </div>
 
       <!-- SBKK Website -->
-      <div class="p-4 border rounded-xl shadow-sm hover:shadow-md">
-        <h3 class="font-bold text-indigo-700">SBKK Website</h3>
-        <p class="text-sm mb-2">Cultural institution site highlighting dance dramas, arts, and heritage of SBKK.</p>
-        <p class="text-sm font-semibold text-gray-700">Skills Used:</p>
-        <ul class="list-disc list-inside text-sm text-gray-600 mb-2">
-          <li>UI Testing: Manual Testing</li>
-          <li>Responsiveness Testing</li>
-          <li>Test Case Design & Documentation</li>
-          <li>Bug Tracking: Jira</li>
-        </ul>
-        <a href="https://sbkk.in/" target="_blank" class="text-indigo-600 text-sm font-medium">View Project →</a>
+      <div class="bg-white border rounded-2xl shadow-lg p-6 hover:shadow-xl transition transform hover:scale-105">
+        <h3 class="text-xl font-bold text-indigo-700 mb-2">SBKK Website</h3>
+        <p class="text-sm text-gray-600 mb-4">
+          Cultural institution site highlighting dance dramas, arts, and heritage of SBKK.
+        </p>
+
+        <!-- Role -->
+        <div class="mb-3">
+          <span class="inline-block bg-indigo-100 text-indigo-800 text-xs font-semibold px-3 py-1 rounded-full">
+            Role: Manual QA & Test Case Designer
+          </span>
+        </div>
+
+        <!-- Skills -->
+        <div class="mb-4">
+          <h4 class="text-sm font-semibold text-gray-700 mb-1">Skills Used:</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Manual Testing</span>
+            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Responsiveness Testing</span>
+            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Test Case Design</span>
+            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Jira</span>
+          </div>
+        </div>
+
+        <!-- Achievements -->
+        <div class="bg-indigo-50 border-l-4 border-indigo-500 p-3 rounded mb-4">
+          <h4 class="text-sm font-semibold text-indigo-800 mb-1">Key Achievements:</h4>
+          <ul class="list-disc list-inside text-xs text-gray-700 space-y-1">
+            <li>Logged 50+ UI/UX issues improving customer satisfaction.</li>
+            <li>Validated cross-browser responsiveness on 10+ devices.</li>
+            <li>Delivered reusable test case repository for regression testing.</li>
+          </ul>
+        </div>
+
+        <!-- Footer Info -->
+        <div class="flex justify-between items-center text-sm text-gray-600">
+          <p><strong>👥 Team Size:</strong> 7</p>
+          <a href="https://sbkk.in/" target="_blank" 
+             class="text-indigo-600 font-medium hover:underline">View Project →</a>
+        </div>
       </div>
 
       <!-- GoEverbright -->
-      <div class="p-4 border rounded-xl shadow-sm hover:shadow-md">
-        <h3 class="font-bold text-indigo-700">GoEverbright</h3>
-        <p class="text-sm mb-2">Corporate website providing business solutions and services with modern UI/UX features.</p>
-        <p class="text-sm font-semibold text-gray-700">Skills Used:</p>
-        <ul class="list-disc list-inside text-sm text-gray-600 mb-2">
-          <li>Automation: WebdriverIO with JavaScript</li>
-          <li>Framework: Mocha/Jesmine</li>
-          <li>CI/CD: Jenkins</li>
-          <li>Cloud: AWS</li>
-        </ul>
-        <a href="https://www.goeverbright.com/" target="_blank" class="text-indigo-600 text-sm font-medium">View Project →</a>
+      <div class="bg-white border rounded-2xl shadow-lg p-6 hover:shadow-xl transition transform hover:scale-105">
+        <h3 class="text-xl font-bold text-indigo-700 mb-2">GoEverbright</h3>
+        <p class="text-sm text-gray-600 mb-4">
+          Corporate website providing business solutions and services with modern UI/UX features.
+        </p>
+
+        <!-- Role -->
+        <div class="mb-3">
+          <span class="inline-block bg-indigo-100 text-indigo-800 text-xs font-semibold px-3 py-1 rounded-full">
+            Role: UI Automation Engineer (WebdriverIO)
+          </span>
+        </div>
+
+        <!-- Skills -->
+        <div class="mb-4">
+          <h4 class="text-sm font-semibold text-gray-700 mb-1">Skills Used:</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">WebdriverIO</span>
+            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">JavaScript</span>
+            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Mocha</span>
+            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">Jenkins</span>
+            <span class="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">AWS</span>
+          </div>
+        </div>
+
+        <!-- Achievements -->
+        <div class="bg-indigo-50 border-l-4 border-indigo-500 p-3 rounded mb-4">
+          <h4 class="text-sm font-semibold text-indigo-800 mb-1">Key Achievements:</h4>
+          <ul class="list-disc list-inside text-xs text-gray-700 space-y-1">
+            <li>Automated 80% of UI workflows reducing manual effort.</li>
+            <li>Improved test execution speed by <strong>35%</strong> with parallel runs.</li>
+            <li>Enabled continuous testing in CI/CD for faster releases.</li>
+          </ul>
+        </div>
+
+        <!-- Footer Info -->
+        <div class="flex justify-between items-center text-sm text-gray-600">
+          <p><strong>👥 Team Size:</strong> 9</p>
+          <a href="https://www.goeverbright.com/" target="_blank" 
+             class="text-indigo-600 font-medium hover:underline">View Project →</a>
+        </div>
       </div>
 
     </div>
   </div>
 </section>
-
 
   <!-- Certifications & Education -->
   <section class="max-w-5xl mx-auto my-10 px-4">
@@ -191,16 +309,74 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-indigo-900 text-white py-6 mt-10">
-    <div class="max-w-5xl mx-auto text-center space-x-4">
-      <a href="https://www.linkedin.com/in/insha-parveen-bba29422b/" target="_blank" class="hover:underline">LinkedIn</a>
-      <a href="https://github.com/erinshaparveen" target="_blank" class="hover:underline">GitHub</a>
-      <a href="mailto:er.inshaparveen@gmail.com" class="hover:underline">Email</a>
+<!-- Footer -->
+<footer class="bg-indigo-900 text-white mt-10">
+  <div class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+    <!-- Branding -->
+    <div>
+      <h2 class="text-xl font-bold">Insha Parveen</h2>
+      <p class="text-sm text-gray-300 mt-2">Automation Test Engineer | 3+ Years Experience</p>
+
+      <div class="mt-4 flex items-center gap-3">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/insha-parveen-bba29422b/" target="_blank" rel="noopener" aria-label="LinkedIn" class="hover:text-yellow-300">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.3 8.98h4.36V24H.3V8.98zM8.98 8.98h4.18v2.06h.06c.58-1.1 2.01-2.26 4.14-2.26 4.43 0 5.25 2.9 5.25 6.67V24h-4.36v-7.22c0-1.72-.03-3.93-2.4-3.93-2.4 0-2.77 1.88-2.77 3.81V24H8.98V8.98z"/>
+          </svg>
+        </a>
+        <!-- GitHub -->
+        <a href="https://github.com/erinshaparveen" target="_blank" rel="noopener" aria-label="GitHub" class="hover:text-yellow-300">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 .5C5.7.5.9 5.3.9 11.7c0 4.6 3 8.5 7.1 9.9.5.1.7-.2.7-.5v-1.8c-2.9.6-3.5-1.2-3.5-1.2-.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1 .1 1.7.7 2.1 1.2.1-.9.4-1.6.7-2-2.3-.3-4.7-1.2-4.7-5.3 0-1 .4-1.8 1-2.5-.1-.3-.4-1.2.1-2.5 0 0 .8-.3 2.6 1 .8-.2 1.6-.3 2.4-.3s1.6.1 2.4.3c1.8-1.3 2.6-1 2.6-1 .5 1.3.2 2.2.1 2.5.6.7 1 1.5 1 2.5 0 4.1-2.5 5-4.7 5.3.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.7.5 4.1-1.4 7.1-5.3 7.1-9.9C23.1 5.3 18.3.5 12 .5z"/>
+          </svg>
+        </a>
+        <!-- Email -->
+        <a href="mailto:er.inshaparveen@gmail.com" aria-label="Email" class="hover:text-yellow-300">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.89 2 1.99 2H20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+        </a>
+      </div>
     </div>
-  </footer>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
+      <ul class="space-y-2 text-gray-300 text-sm">
+        <li><a href="#about" class="hover:text-yellow-300 transition">About</a></li>
+        <li><a href="#projects" class="hover:text-yellow-300 transition">Projects</a></li>
+        <li><a href="#skills" class="hover:text-yellow-300 transition">Skills</a></li>
+        <li><a href="#contact" class="hover:text-yellow-300 transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- CTA -->
+    <div>
+      <h3 class="text-lg font-semibold mb-3">Contact</h3>
+      <p class="text-sm text-gray-300 mb-4">Interested in working together? Reach out — I respond quickly.</p>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a href="mailto:er.inshaparveen@gmail.com" class="inline-block bg-yellow-400 text-indigo-900 font-semibold px-4 py-2 rounded-lg text-center hover:bg-yellow-300">Hire Me</a>
+        <a href="InshaParveen(AutomationEngineer).pdf" download class="inline-block border border-gray-200 px-4 py-2 rounded-lg text-sm text-white hover:bg-indigo-800 text-center">Download Resume</a>
+      </div>
+
+      <p class="text-xs text-gray-400 mt-4">© <span id="year"></span> Insha Parveen. All Rights Reserved.</p>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="bg-indigo-950 text-gray-400 text-center py-4 text-sm">
+    Built with ❤️ • Automation | API | Mobile | Performance | Database
+  </div>
+</footer>
+
+<script>
+  // small script to set current year
+  document.getElementById('year')?.replaceWith(document.createTextNode(new Date().getFullYear()));
+</script>
+>
+
 
 </body>
 </html>
-
-
